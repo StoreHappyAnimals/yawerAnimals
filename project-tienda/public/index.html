@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=widt,initial-scale, initial-scale=1.0">
+    <title>Store Happy Animals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Store Happy Animals</h1>
+
+        <!-- Contiene el icono carrito -->
+        <div class="container-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+              </svg>
+              <!-- Cuenta los productos que se seleccionan  y se muestran en el carrito -->
+              <div class="count-products">
+                <span id="contador-productos">0</span>
+              </div>
+              <div class="container-cart-products hidden-cart">
+                <!-- Contiene la informacion del producto que se añadio al carro -->
+                <div class="cart-product">
+                    <div class="info-cart-product">
+                        <!-- Resumen del producto seleccionado y se muestra en el carrito -->
+                        <span class="cantidad-producto-carrito"> 1 </span>
+                        <p class="titulo-producto-carrito">Equilibrio - Razas Pequeñas Adulto</p>
+                        <span class="precio-producto-carrito">$17000</span>
+                    </div>
+                    <!-- Contiene la imagen de la X del carrito -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                </div>
+                <!-- Contiene la informacion del total a pagar por los productos seleccionados -->
+                <div class="cart-total">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200000</span>
+                </div>
+              </div>
+       </div>
+       
+    </header>
+    <!-- Contiene las imagenes de los productos -->
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="https://laika.com.co/cdn-cgi/image/fit=scale-down,width=250,format=auto,quality=80,onerror=redirect/https://s3.us-east-1.amazonaws.com/laikapp/images_products/30ee8a21cbdf3f3c5ead58d05387a94f.jpg" alt="producto">
+            </figure>
+            <!-- Contiene las informacion de los productos -->
+            <div class="info-product">
+                <h2>Equilibrio</h2>
+                <p class="price">$17000</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+    
+    <div class="item">
+        <figure>
+            <img src="https://laika.com.co/cdn-cgi/image/fit=scale-down,width=250,format=auto,quality=80,onerror=redirect/https://laikapp.s3.amazonaws.com/dev_images_products/1396_GUAUMOR_CACHORROZ_RAZAS_MEDIANAS_Y_GRANDES_1595872775_1000x1000.png" alt="producto">
+        </figure>
+        <div class="info-product">
+            <h2>Guaumor</h2>
+            <p class="price">$23000 </p>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>  <div class="item">
+        <figure>
+            <img src="https://laika.com.co/cdn-cgi/image/fit=scale-down,width=250,format=auto,quality=80,onerror=redirect/https://laikapp.s3.amazonaws.com/dev_images_products/79312_201311_Besties___Alimento_Perros_Cachorros_Sabor_Carne_y_Pollo_1666816067_800x800.jpg" alt="producto">
+        </figure>
+        <div class="info-product">
+            <h2>Besties</h2>
+            <p class="price">$34000</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>  <div class="item">
+        <figure>
+            <img src="https://laika.com.co/cdn-cgi/image/fit=scale-down,width=250,format=auto,quality=80,onerror=redirect/https://laikapp.s3.amazonaws.com/dev_images_products/1438_157485_Pedigree___Alimento_Para_Perro_Adulto_Raza_Peque__a_1652110695_500x500.jpg" alt="producto">
+        </figure>
+        <div class="info-product">
+            <h2>Pedigree</h2>
+            <p class="price">$211000</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>
+</div>
+<script src="./index.js"></script>
+<script src="./indexlogin.js"></script>
+<script src="./carrito.js"></script>
+</body>
+</html>
